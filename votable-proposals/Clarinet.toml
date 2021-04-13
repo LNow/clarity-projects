@@ -1,0 +1,6 @@
+[project]
+name = "votalbe-proposals"
+
+[contracts.proposals]
+path = "contracts/proposals.clar"
+depends_on = []
