@@ -1,0 +1,5 @@
+[project]
+name = "stx-votable-proposals"
+[contracts.proposals]
+path = "contracts/proposals.clar"
+depends_on = []
