@@ -1,0 +1,5 @@
+[project]
+name = "dao-projects"
+[contracts.projects]
+path = "contracts/projects.clar"
+depends_on = []
