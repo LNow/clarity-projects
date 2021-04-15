@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="508px" height="508px" viewBox="0 0 508 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>back</title>
+    <g id="rhum" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="polygons" transform="translate(63.000000, 79.000000)">
+            <polygon id="Triangle" fill="#109ED3" transform="translate(310.626299, 286.495918) rotate(-259.000000) translate(-310.626299, -286.495918) " points="362.612969 328.001962 258.639629 347.984694 342.365588 225.007142"></polygon>
+            <polygon id="Triangle" fill="#10B0EC" transform="translate(209.673061, 266.990543) rotate(-259.000000) translate(-209.673061, -266.990543) " points="157.686391 225.484499 261.659732 205.501767 177.933773 328.479319"></polygon>
+            <polygon id="Triangle" fill="#CB0806" transform="translate(142.763569, 135.909356) rotate(-304.000000) translate(-142.763569, -135.909356) " points="90.7442311 94.1312174 194.782907 73.9274549 110.932541 197.891258"></polygon>
+            <polygon id="Triangle" fill="#A7080A" transform="translate(80.063162, 78.200706) rotate(-304.000000) translate(-80.063162, -78.200706) " points="132.082474 119.644459 28.0438505 139.68686 111.893896 16.7145512"></polygon>
+            <polygon id="Triangle" fill="#D9BA06" transform="translate(225.152052, 188.997340) scale(1, -1) rotate(11.000000) translate(-225.152052, -188.997340) " points="239.3966 232.084729 151.739897 174.002198 298.564207 145.909952"></polygon>
+            <polygon id="Triangle" fill="#F4D002" transform="translate(275.745404, 150.162229) scale(1, -1) rotate(-79.000000) translate(-275.745404, -150.162229) " points="261.476314 106.524567 349.0217 165.435604 202.469107 193.79989"></polygon>
+            <polygon id="Triangle" fill="#2A8735" transform="translate(224.559479, 99.190493) rotate(11.000000) translate(-224.559479, -99.190493) " points="238.803077 142.773418 151.147388 84.0234846 297.971569 55.6075675"></polygon>
+        </g>
+    </g>
+</svg>

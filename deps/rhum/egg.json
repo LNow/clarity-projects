@@ -1,0 +1,20 @@
+{
+  "name": "rhum",
+  "description": "A lightweight testing framework for Deno.",
+  "version": "1.1.9",
+  "stable": true,
+  "repository": "https://github.com/drashland/rhum",
+  "files": [
+    "./mod.ts",
+    "./deps.ts",
+    "./src/**/*",
+    "./README.md",
+    "./logo.svg",
+    "LICENSE"
+  ],
+  "check": false,
+  "entry": "./mod.ts",
+  "homepage": "https://github.com/drashland/rhum",
+  "ignore": [],
+  "unlisted": false
+}
