@@ -1,0 +1,21 @@
+
+[project]
+name = "proxy"
+
+[contracts.subject_trait]
+path = "contracts/subject_trait.clar"
+depends_on = []
+
+[contracts.proxy]
+path = "contracts/proxy.clar"
+depends_on = ["subject_trait", "subject_a", "subject_b"]
+
+[contracts.subject_a]
+path = "contracts/subject_a.clar"
+depends_on = ["subject_trait"]
+
+[contracts.subject_b]
+path = "contracts/subject_b.clar"
+depends_on = ["subject_trait"]
+
+[notebooks]
