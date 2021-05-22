@@ -1,0 +1,9 @@
+
+[project]
+name = "push-out-list"
+
+[contracts.push-list]
+path = "contracts/push-list.clar"
+depends_on = []
+
+[notebooks]
