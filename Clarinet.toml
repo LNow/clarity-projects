@@ -1,0 +1,17 @@
+[project]
+name = "clarity-projects"
+authors = ["LNow"]
+description = "ClarityProjects"
+telemetry = false
+requirements = []
+analysis = ["check_checker"]
+costs_version = 2
+
+
+[contracts.uint-to-ascii]
+path = "contracts/utility/uint-to-ascii.clar"
+depends_on = []
+
+[contracts.vrf]
+path = "contracts/utility/vrf.clar"
+depends_on = []
