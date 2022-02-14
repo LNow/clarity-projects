@@ -7,6 +7,14 @@ requirements = []
 analysis = ["check_checker"]
 costs_version = 2
 
+# EXTERNAL CONTRACTS
+[contracts.sip-010-trait-ft-standard]
+path = "contracts/external/sip-010-trait-ft-standard.clar"
+depends_on = []
+
+[contracts.sip-009-trait-nft-standard]
+path = "contracts/external/sip-009-trait-nft-standard.clar"
+depends_on = []
 
 [contracts.uint-to-ascii]
 path = "contracts/utility/uint-to-ascii.clar"
