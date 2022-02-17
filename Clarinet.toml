@@ -23,3 +23,7 @@ depends_on = []
 [contracts.vrf]
 path = "contracts/utility/vrf.clar"
 depends_on = []
+
+[contracts.base-ft-token]
+path = "contracts/tokens/base-ft-token.clar"
+depends_on = ["sip-010-trait-ft-standard"]
