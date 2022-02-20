@@ -29,7 +29,7 @@
 
 (define-constant ERR_UNKNOWN_TENDER (err u4002))
 
-(define-map PricingDetails 
+(define-map TenderPricing 
     principal ;; tender
     {
         price: uint,
@@ -43,7 +43,7 @@
 (define-public (mint-with (tender <ft-trait>))
     (let
         (
-            (pricing (unwrap! (map-get? PricingDetails (contract-of tender)) ERR_UNKNOWN_TENDER))
+            (pricing (unwrap! (map-get? TenderPricing (contract-of tender)) ERR_UNKNOWN_TENDER))
             (price (get price pricing))
             (artistAddress (get artistAddress pricing))
             (commission (/ (* price (get commissionRate pricing)) u10000))
@@ -52,21 +52,21 @@
         )
         (try! (nft-mint? mintable-nft newTokenId tx-sender))
 
-        (try! (contract-call? tender transfer price tx-sender artistAddress none))
-        (try! (contract-call? tender transfer commission tx-sender commissionAddress none)) 
+        (and (> price u0) (try! (contract-call? tender transfer price tx-sender artistAddress none)))
+        (and (> commission u0) (try! (contract-call? tender transfer commission tx-sender commissionAddress none)))
         (var-set lastTokenId newTokenId)
         (ok newTokenId)
     )
 )
 
-(define-public (set-pricing-details 
+(define-public (set-tender-pricing 
     (tender <ft-trait>) 
     (price uint) (artistAddress principal) 
     (commissionRate uint) (commissionAddress principal))
 
     (begin
         (asserts! (is-eq contract-caller CONTRACT_OWNER) ERR_UNAUTHORIZED)
-        (ok (map-set PricingDetails
+        (ok (map-set TenderPricing
             (contract-of tender)
             {
                 price: price,
