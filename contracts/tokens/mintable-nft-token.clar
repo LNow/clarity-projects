@@ -39,7 +39,6 @@
     }
 )
 
-
 (define-public (mint-with (tender <ft-trait>))
     (let
         (
