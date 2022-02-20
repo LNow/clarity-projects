@@ -42,8 +42,8 @@ depends_on = []
 path = "contracts/tokens/base-ft-token.clar"
 depends_on = ["sip-010-trait-ft-standard"]
 
-[contracts.wstx]
-path = "contracts/tokens/wstx.clar"
+[contracts.wstx-token]
+path = "contracts/tokens/wstx-token.clar"
 depends_on = ["sip-010-trait-ft-standard"]
 
 [contracts.base-nft-token]
