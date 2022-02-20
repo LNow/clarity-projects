@@ -4,8 +4,22 @@ authors = ["LNow"]
 description = "ClarityProjects"
 telemetry = false
 requirements = []
-analysis = ["check_checker"]
+
+[repl]
 costs_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+# If true, inputs are trusted after tx_sender has been checked.
+trusted_sender = false
+# If true, inputs are trusted after contract-caller has been checked.
+trusted_caller = false
+# If true, untrusted data may be passed into a private function without a
+# warning, if it gets checked inside. This check will also propagate up to the
+# caller.
+callee_filter = false
 
 # EXTERNAL CONTRACTS
 [contracts.sip-010-trait-ft-standard]
@@ -28,6 +42,14 @@ depends_on = []
 path = "contracts/tokens/base-ft-token.clar"
 depends_on = ["sip-010-trait-ft-standard"]
 
+[contracts.wstx-token]
+path = "contracts/tokens/wstx-token.clar"
+depends_on = ["sip-010-trait-ft-standard"]
+
 [contracts.base-nft-token]
 path = "contracts/tokens/base-nft-token.clar"
 depends_on = ["sip-009-trait-nft-standard"]
+
+[contracts.mintable-nft-token]
+path = "contracts/tokens/mintable-nft-token.clar"
+depends_on = ["sip-009-trait-nft-standard", "sip-010-trait-ft-standard"]
