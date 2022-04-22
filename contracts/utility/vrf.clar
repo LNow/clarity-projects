@@ -8,7 +8,7 @@
     rnd (ok rnd)
     (match (read-rnd block)
       rnd (begin (map-set BlockRnd block rnd) (ok rnd))
-      err (err err)
+      err-val (err err-val)
     ) 
   )
 )
