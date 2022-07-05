@@ -34,6 +34,12 @@ depends_on = []
 path = "contracts/utility/uint-to-ascii.clar"
 depends_on = []
 
+[contracts.buff-to-ascii]
+path = "contracts/utility/buff-to-ascii.clar"
+
+[contracts.ascii-to-buff]
+path = "contracts/utility/ascii-to-buff.clar"
+
 [contracts.vrf]
 path = "contracts/utility/vrf.clar"
 depends_on = []
